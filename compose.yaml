@@ -1,0 +1,9 @@
+services:
+  mysql:
+    image: 'mysql:8.2'
+    environment:
+      - 'MYSQL_DATABASE=apijava'
+      - 'MYSQL_ROOT_PASSWORD=secret'
+      - 'TZ=America/Sao_Paulo'
+    ports:
+      - '3306:3306'
